@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🚀🚀🚀 Starting pre-commit scripts 🚀🚀🚀";
+echo "🐺🐺🐺 Hello my name is Husky and I'll help you with your code";
+echo "";
+
+echo "1 - 💅💅💅 It's time to format you code!";
+
+yarn format ||
+(
+    echo "🤢🤮🤢🤮 It's FU**ING RAW!!! Your styling looks disgusting 🤢🤮🤢🤮";
+    echo "Format failed, run 'yarn format' to try again";
+
+    false;
+)
+
+echo "";
+echo "🎉🎉🎉 Well... you win this time... I'm committing this now!!! 🎉🎉🎉";
+echo "";

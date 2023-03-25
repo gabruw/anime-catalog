@@ -1,0 +1,98 @@
+{
+  // cSpell
+  "cSpell.language": "en,pt-BR",
+
+  // GIT
+  "git.enabled": true,
+  "git.autofetch": true,
+  "git.detectSubmodules": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreLimitWarning": true,
+
+  // Jest
+  "jest.autoRun": {
+    "onStartup": []
+  },
+
+  // JSON
+  "json.format.enable": true,
+
+  // HTML
+  "html.format.enable": true,
+  "html.suggest.html5": true,
+  "html.autoClosingTags": true,
+  "html.validate.scripts": false,
+  "html.format.indentInnerHtml": true,
+
+  // Javascript
+  "javascript.format.enable": true,
+  "javascript.validate.enable": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggestionActions.enabled": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Typescript
+  "typescript.format.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.suggestionActions.enabled": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+
+  // Workbench
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Explorer
+  "explorer.copyRelativePathSeparator": "/",
+
+  // Files
+  "files.eol": "\n",
+  "files.autoSave": "off",
+  "files.encoding": "utf8",
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // Search
+  "search.useIgnoreFiles": true,
+  "search.exclude": {
+    ".jest/**/*": true,
+    ".husky/**/*": true,
+    ".github/**/*": true,
+    ".vscode/**/*": true,
+    "reports/**/*": true,
+    "node_modules/**/*": true,
+    ".stryker-tmp/**/*": true
+  },
+
+  // Editor
+  "editor.tabSize": 4,
+  "editor.fontSize": 15,
+  "editor.useTabStops": true,
+  "editor.autoIndent": "full",
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": false,
+  "editor.matchBrackets": "always",
+  "editor.detectIndentation": true,
+  "editor.wrappingIndent": "indent",
+  "editor.trimAutoWhitespace": true,
+  "editor.wordBasedSuggestions": true,
+  "editor.parameterHints.cycle": true,
+  "editor.accessibilitySupport": "off",
+  "editor.parameterHints.enabled": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.snippetSuggestions": "inline",
+  "editor.autoClosingBrackets": "always",
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.format": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  }
+}

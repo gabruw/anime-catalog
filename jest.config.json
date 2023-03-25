@@ -1,0 +1,63 @@
+{
+    "clearMocks": true,
+    "collectCoverage": true,
+    "testEnvironment": "jsdom",
+    "cacheDirectory": ".jest/cache",
+    "coverageDirectory": ".jest/coverage",
+    "moduleFileExtensions": ["js", "ts", "tsx"],
+    "moduleDirectories": ["node_modules", "src"],
+    "setupFilesAfterEnv": ["@testing-library/jest-dom"],
+    "testRegex": "(/__tests__/.*|\\.test)\\.(js|ts|tsx)$",
+    "transform": {
+        "^.+\\.(ts|tsx)?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+        "^@app(.*)$": "<rootDir>/src$1",
+        "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "testPathIgnorePatterns": [
+        "<rootDir>/.jest/",
+        "<rootDir>/.husky/",
+        "<rootDir>/.github/",
+        "<rootDir>/.vscode/",
+        "<rootDir>/src/assets/",
+        "<rootDir>/src/App.tsx",
+        "<rootDir>/src/router/",
+        "<rootDir>/src/main.tsx",
+        "<rootDir>/src/*/routes/",
+        "<rootDir>/node_modules/",
+        "<rootDir>/.stryker-tmp/",
+        "<rootDir>/src/*/__mocks__/",
+        "<rootDir>/src/*/__fixtures__/"
+    ],
+    "modulePathIgnorePatterns": [
+        "<rootDir>/.jest/",
+        "<rootDir>/.husky/",
+        "<rootDir>/.github/",
+        "<rootDir>/.vscode/",
+        "<rootDir>/src/assets/",
+        "<rootDir>/src/App.tsx",
+        "<rootDir>/src/router/",
+        "<rootDir>/src/main.tsx",
+        "<rootDir>/src/*/routes/",
+        "<rootDir>/node_modules/",
+        "<rootDir>/.stryker-tmp/",
+        "<rootDir>/src/*/__mocks__/",
+        "<rootDir>/src/*/__fixtures__/"
+    ],
+    "coveragePathIgnorePatterns": [
+        "<rootDir>/.jest/",
+        "<rootDir>/.husky/",
+        "<rootDir>/.github/",
+        "<rootDir>/.vscode/",
+        "<rootDir>/src/assets/",
+        "<rootDir>/src/App.tsx",
+        "<rootDir>/src/router/",
+        "<rootDir>/src/main.tsx",
+        "<rootDir>/src/*/routes/",
+        "<rootDir>/node_modules/",
+        "<rootDir>/.stryker-tmp/",
+        "<rootDir>/src/*/__mocks__/",
+        "<rootDir>/src/*/__fixtures__/"
+    ]
+}
