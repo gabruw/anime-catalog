@@ -38,6 +38,7 @@
   "typescript.suggest.autoImports": true,
   "typescript.suggestionActions.enabled": true,
   "typescript.suggest.completeFunctionCalls": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.importModuleSpecifier": "relative",
 
@@ -94,5 +95,5 @@
     "source.fixAll.format": true,
     "source.fixAll.eslint": true,
     "source.organizeImports": false
-  }
+  },
 }

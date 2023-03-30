@@ -21,6 +21,7 @@
     "aaron-bond.better-comments",
     "xabikos.javascriptsnippets",
     "philsinatra.nested-comments",
+    "apollographql.vscode-apollo",
     "sonarsource.sonarlint-vscode",
     "github.vscode-github-actions",
     "formulahendry.auto-close-tag",
