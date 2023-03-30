@@ -5,12 +5,12 @@ import {
 } from "@app/pages/sets/graphql/queries/set/__fixtures__/constants";
 import { createSetQueryMock } from "@app/pages/sets/graphql/queries/set/__fixtures__/query";
 
-export const mockSetQuerySuccess = createSetQueryMock({
+export const setQuerySuccessMock = createSetQueryMock({
     data: setQueryReturnMock,
     variables: setQueryVariablesMock,
 });
 
-export const mockSetQueryFailure = createSetQueryMock({
+export const setQueryFailureMock = createSetQueryMock({
     error: setQueryErrorMock,
     variables: setQueryVariablesMock,
 });
