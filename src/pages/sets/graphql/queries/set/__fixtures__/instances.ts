@@ -1,10 +1,16 @@
-import { mockSetQueryError, mockSetQueryReturn } from "@app/pages/sets/graphql/queries/set/__fixtures__/constants";
-import { mockSetQuery } from "@app/pages/sets/graphql/queries/set/__fixtures__/query";
+import {
+    setQueryErrorMock,
+    setQueryReturnMock,
+    setQueryVariablesMock,
+} from "@app/pages/sets/graphql/queries/set/__fixtures__/constants";
+import { createSetQueryMock } from "@app/pages/sets/graphql/queries/set/__fixtures__/query";
 
-export const mockSetQuerySuccess = mockSetQuery({
-    data: mockSetQueryReturn,
+export const mockSetQuerySuccess = createSetQueryMock({
+    data: setQueryReturnMock,
+    variables: setQueryVariablesMock,
 });
 
-export const mockSetQueryFailure = mockSetQuery({
-    error: mockSetQueryError,
+export const mockSetQueryFailure = createSetQueryMock({
+    error: setQueryErrorMock,
+    variables: setQueryVariablesMock,
 });

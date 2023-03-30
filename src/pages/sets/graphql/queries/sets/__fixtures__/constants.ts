@@ -2,9 +2,9 @@ import { GraphQLError } from "graphql";
 
 import { SetsQueryReturn } from "@app/pages/sets/graphql/queries/sets/types";
 
-export const mockSetsQueryError = new GraphQLError("Error to fetch Sets");
+export const setsQueryErrorMock = new GraphQLError("Error to fetch Sets");
 
-export const mockSetsQueryReturn: SetsQueryReturn = {
+export const setsQueryReturnMock: SetsQueryReturn = {
     sets: [
         {
             id: "base1",

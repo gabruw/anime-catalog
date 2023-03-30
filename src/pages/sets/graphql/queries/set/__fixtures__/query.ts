@@ -1,22 +1,24 @@
 import { MockedResponse } from "@apollo/client/testing";
-import { GraphQLError } from "graphql";
 
+import { QueryMock } from "@app/global/types/query-mock";
 import { SET } from "@app/pages/sets/graphql/queries/set";
-import { SetQueryReturn } from "@app/pages/sets/graphql/queries/set/types";
+import { SetQueryReturn, SetQueryVariables } from "@app/pages/sets/graphql/queries/set/types";
 
-type MockSetQuery = {
-    error?: GraphQLError;
-    data?: SetQueryReturn;
-};
+type SetQueryMock = QueryMock<SetQueryReturn, SetQueryVariables>;
 
-const mockSetQuery = ({ data, error }: MockSetQuery): MockedResponse => ({
+const createSetQueryMock = ({
+    data,
+    error,
+    variables,
+}: SetQueryMock): MockedResponse<SetQueryReturn, SetQueryVariables> => ({
     error,
     request: {
         query: SET,
+        variables,
     },
     result: {
         data,
     },
 });
 
-export { mockSetQuery };
+export { createSetQueryMock };

@@ -1,10 +1,14 @@
 import { GraphQLError } from "graphql";
 
-import { SetQueryReturn } from "@app/pages/sets/graphql/queries/set/types";
+import { SetQueryReturn, SetQueryVariables } from "@app/pages/sets/graphql/queries/set/types";
 
-export const mockSetQueryError = new GraphQLError("Error to fetch Set");
+export const setQueryErrorMock = new GraphQLError("Error to fetch Set");
 
-export const mockSetQueryReturn: SetQueryReturn = {
+export const setQueryVariablesMock: SetQueryVariables = {
+    id: "base1",
+};
+
+export const setQueryReturnMock: SetQueryReturn = {
     set: {
         id: "base1",
         name: "Base Set",
