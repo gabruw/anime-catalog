@@ -1,22 +1,22 @@
 import { QueryResult, useQuery } from "@apollo/client";
 
+import { SeriesQueryReturn } from "@app/pages/series/graphql/queries/series/types";
 import { SETS } from "@app/pages/sets/graphql/queries/sets";
-import { SetsQueryReturn } from "@app/pages/sets/graphql/queries/sets/types";
 
-export type SetsQueryHookReturn = {
-    sets?: SetsQueryReturn["sets"];
+export type SeriesQueryHookReturn = {
     isLoading: QueryResult["loading"];
+    series?: SeriesQueryReturn["series"];
 };
 
-const useSetsQuery = (): SetsQueryHookReturn => {
-    const { data, loading } = useQuery<SetsQueryReturn>(SETS, {
+const useSeriesQuery = (): SeriesQueryHookReturn => {
+    const { data, loading } = useQuery<SeriesQueryReturn>(SETS, {
         fetchPolicy: "cache-and-network",
     });
 
     return {
-        sets: data?.sets,
         isLoading: loading,
+        series: data?.series,
     };
 };
 
-export { useSetsQuery };
+export { useSeriesQuery };

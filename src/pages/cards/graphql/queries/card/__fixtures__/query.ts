@@ -1,6 +1,6 @@
 import { MockedResponse } from "@apollo/client/testing";
 
-import { QueryMock } from "@app/global/types/query-mock";
+import { QueryMock } from "@app/types/query-mock";
 import { CardQueryReturn, CardQueryVariables } from "@app/pages/cards/graphql/queries/card/types";
 import { SERIE } from "@app/pages/series/graphql/queries/serie";
 
