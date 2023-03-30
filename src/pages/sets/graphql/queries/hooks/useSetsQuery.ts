@@ -5,7 +5,7 @@ import { SetsQueryReturn } from "@app/pages/sets/graphql/queries/sets/types";
 
 export type SetsQueryHookReturn = {
     sets?: SetsQueryReturn["sets"];
-    isLoading: QueryResult<SetsQueryReturn>["loading"];
+    isLoading: QueryResult["loading"];
 };
 
 const useSetsQuery = (): SetsQueryHookReturn => {

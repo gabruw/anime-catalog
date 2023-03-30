@@ -10,7 +10,7 @@ export type SetQueryHookParams = {
 
 export type SetQueryHookReturn = {
     set?: SetQueryReturn["set"];
-    isLoading: QueryResult<SetQueryReturn>["loading"];
+    isLoading: QueryResult["loading"];
 };
 
 const useSetQuery = ({ setId }: SetQueryHookParams): SetQueryHookReturn => {

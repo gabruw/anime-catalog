@@ -10,7 +10,7 @@ export type SerieQueryHookParams = {
 
 export type SerieQueryHookReturn = {
     serie?: SerieQueryReturn["serie"];
-    isLoading: QueryResult<SerieQueryReturn>["loading"];
+    isLoading: QueryResult["loading"];
 };
 
 const useSerieQuery = ({ serieId }: SerieQueryHookParams): SerieQueryHookReturn => {

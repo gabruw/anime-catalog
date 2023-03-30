@@ -14,7 +14,7 @@ export const seriesQueryReturnMock: SeriesQueryReturn = {
         {
             id: "neo",
             name: "Neo",
-            logo: "https://assets.tcgdex.net/en/neo/neo1/logo",
+            logo: "https://assets.tcgdex.net/en/neo/neo1/logo/high.png",
         },
         {
             id: "gym",
