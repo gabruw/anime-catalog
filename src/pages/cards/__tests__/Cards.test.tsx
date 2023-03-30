@@ -1,16 +1,16 @@
 import { render, screen } from "@testing-library/react";
 
-import { SignIn } from "@app/pages/authentication/sign-in";
+import { Cards } from "@app/pages/cards";
 
 const setup = (): void => {
-    render(<SignIn />);
+    render(<Cards />);
 };
 
-describe("<SignIn />", () => {
+describe("<Cards />", () => {
     it("should render", () => {
         setup();
 
-        const title: HTMLDivElement = screen.getByText("SignIn");
+        const title: HTMLDivElement = screen.getByText("Cards");
         expect(title).toBeVisible();
     });
 });

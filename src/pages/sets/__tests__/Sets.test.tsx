@@ -1,16 +1,16 @@
 import { render, screen } from "@testing-library/react";
 
-import { SignUp } from "@app/pages/authentication/sign-up";
+import { Sets } from "@app/pages/sets";
 
 const setup = (): void => {
-    render(<SignUp />);
+    render(<Sets />);
 };
 
-describe("<SignUp />", () => {
+describe("<Sets />", () => {
     it("should render", () => {
         setup();
 
-        const title: HTMLDivElement = screen.getByText("SignUp");
+        const title: HTMLDivElement = screen.getByText("Sets");
         expect(title).toBeVisible();
     });
 });

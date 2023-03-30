@@ -1,14 +1,16 @@
 import { ReactElement } from "react";
 import { Routes } from "react-router-dom";
 
-import { authenticationRoutes } from "@app/pages/authentication/routes/routes";
+import { cardsRoutes } from "@app/pages/cards/routes/routes";
 import { errorRoutes } from "@app/pages/error/routes/routes";
-import { homeRoutes } from "@app/pages/home/routes/routes";
+import { seriesRoutes } from "@app/pages/series/routes/routes";
+import { setsRoutes } from "@app/pages/sets/routes/routes";
 
 const Router = (): ReactElement => (
     <Routes>
-        {homeRoutes}
-        {authenticationRoutes}
+        {setsRoutes}
+        {cardsRoutes}
+        {seriesRoutes}
         {errorRoutes}
     </Routes>
 );

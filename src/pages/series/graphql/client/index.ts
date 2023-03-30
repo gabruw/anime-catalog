@@ -1,9 +1,9 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
-const apolloClient = new ApolloClient({
+const seriesApolloClient = new ApolloClient({
     cache: new InMemoryCache(),
-    uri: import.meta.env.API_BASE,
+    uri: import.meta.env.VITE_API_BASE,
     connectToDevTools: !import.meta.env.PROD,
 });
 
-export { apolloClient };
+export { seriesApolloClient };

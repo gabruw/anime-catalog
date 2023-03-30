@@ -1,16 +1,16 @@
 import { render, screen } from "@testing-library/react";
 
-import { Home } from "@app/pages/home";
+import { Series } from "@app/pages/series";
 
 const setup = (): void => {
-    render(<Home />);
+    render(<Series />);
 };
 
-describe("<Home />", () => {
+describe("<Series />", () => {
     it("should render", () => {
         setup();
 
-        const title: HTMLDivElement = screen.getByText("Home");
+        const title: HTMLDivElement = screen.getByText("Series");
         expect(title).toBeVisible();
     });
 });
