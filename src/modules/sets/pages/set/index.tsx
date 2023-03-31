@@ -5,7 +5,7 @@ import { setsApolloClient } from "@app/modules/sets/pages/sets/graphql/client";
 
 const Set = (): ReactElement => (
     <ApolloProvider client={setsApolloClient}>
-        <div>Sets</div>
+        <div>Set</div>
     </ApolloProvider>
 );
 
