@@ -1,3 +1,5 @@
-enum Reducers {}
+enum Reducers {
+    IMAGE = "IMAGE",
+}
 
 export { Reducers };

@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { App } from "@app/App";
 import { ScreenLoader } from "@app/components/ScreenLoader";
 
-import "@app/global/styles.css";
+import "@app/styles/global.css";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
     <StrictMode>
