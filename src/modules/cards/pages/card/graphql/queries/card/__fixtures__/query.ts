@@ -2,7 +2,7 @@ import { MockedResponse } from "@apollo/client/testing";
 
 import { CARD } from "@app/modules/cards/pages/card/graphql/queries/card";
 import { CardQueryReturn, CardQueryVariables } from "@app/modules/cards/pages/card/graphql/queries/card/types";
-import { QueryMock } from "@app/types/query-mock";
+import { QueryMock } from "@app/types/QueryMock";
 
 type CardQueryMock = QueryMock<CardQueryReturn, CardQueryVariables>;
 

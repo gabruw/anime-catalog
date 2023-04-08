@@ -4,7 +4,7 @@ import { CARD } from "@app/modules/cards/pages/card/graphql/queries/card";
 import { CardQueryReturn, CardQueryVariables } from "@app/modules/cards/pages/card/graphql/queries/card/types";
 import { Card } from "@app/modules/cards/types/Card";
 
-export type CardQueryHookParams = {
+export type CardQueryHookProps = {
     cardId: Card["id"];
 };
 
@@ -13,7 +13,7 @@ export type CardQueryHookReturn = {
     isLoading: QueryResult["loading"];
 };
 
-const useCardQuery = ({ cardId }: CardQueryHookParams): CardQueryHookReturn => {
+const useCardQuery = ({ cardId }: CardQueryHookProps): CardQueryHookReturn => {
     const { data, loading } = useQuery<CardQueryReturn, CardQueryVariables>(CARD, {
         fetchPolicy: "network-only",
         variables: {

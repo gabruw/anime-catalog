@@ -5,12 +5,12 @@ import {
 } from "@app/modules/cards/pages/card/graphql/queries/card/__fixtures__/constants";
 import { createCardQueryMock } from "@app/modules/cards/pages/card/graphql/queries/card/__fixtures__/query";
 
-export const mockSetQuerySuccess = createCardQueryMock({
+export const cardQuerySuccessMock = createCardQueryMock({
     data: cardQueryReturnMock,
     variables: cardQueryVariablesMock,
 });
 
-export const mockSetQueryFailure = createCardQueryMock({
+export const cardQueryFailureMock = createCardQueryMock({
     error: cardQueryErrorMock,
     variables: cardQueryVariablesMock,
 });

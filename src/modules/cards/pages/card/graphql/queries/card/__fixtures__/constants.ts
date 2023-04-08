@@ -14,6 +14,6 @@ export const cardQueryReturnMock: CardQueryReturn = {
         dexId: [142],
         name: "Aerodactyl",
         category: "Pokemon",
-        image: "https://assets.tcgdex.net/en/base/base3/1/high.png",
+        image: "https://assets.tcgdex.net/en/base/base3/1",
     },
 };
