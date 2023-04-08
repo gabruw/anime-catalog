@@ -8,6 +8,7 @@
     "moduleDirectories": ["node_modules", "src"],
     "setupFilesAfterEnv": ["@testing-library/jest-dom"],
     "testRegex": "(/__tests__/.*|\\.test)\\.(js|ts|tsx)$",
+    "setupFiles": ["<rootDir>/src/__mocks__/setup/index.ts"],
     "transform": {
         "^.+\\.(ts|tsx)?$": "babel-jest"
     },
