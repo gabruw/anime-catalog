@@ -9,17 +9,17 @@ export const seriesQueryReturnMock: SeriesQueryReturn = {
         {
             id: "base",
             name: "Base",
-            logo: "https://assets.tcgdex.net/en/base/base1/logo/high.png",
+            logo: "https://assets.tcgdex.net/en/base/base1/logo",
         },
         {
             id: "neo",
             name: "Neo",
-            logo: "https://assets.tcgdex.net/en/neo/neo1/logo/high.png",
+            logo: "https://assets.tcgdex.net/en/neo/neo1/logo",
         },
         {
             id: "gym",
             name: "Gym",
-            logo: "https://assets.tcgdex.net/en/gym/gym1/logo/high.png",
+            logo: "https://assets.tcgdex.net/en/gym/gym1/logo",
         },
     ],
 };

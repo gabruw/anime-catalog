@@ -2,7 +2,7 @@ import { MockedResponse } from "@apollo/client/testing";
 
 import { SERIES } from "@app/modules/series/pages/series/graphql/queries/series";
 import { SeriesQueryReturn } from "@app/modules/series/pages/series/graphql/queries/series/types";
-import { QueryMock } from "@app/types/query-mock";
+import { QueryMock } from "@app/types/QueryMock";
 
 type SeriesQueryMock = QueryMock<SeriesQueryReturn>;
 

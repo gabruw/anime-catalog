@@ -1,4 +1,4 @@
-import { renderQueryHook } from "@app/__fixtures__/functions/renderQueryHook";
+import { renderQueryHook } from "@app/__fixtures__/functions/renderHook/renderQueryHook";
 import {
     SeriesQueryHookReturn,
     useSeriesQuery,
@@ -11,7 +11,7 @@ import {
 
 describe("useSeriesQuery()", () => {
     it("should return series successfully", async () => {
-        const { result, waitForNextUpdate } = renderQueryHook<SeriesQueryHookReturn>({
+        const { result, waitForNextUpdate } = renderQueryHook<void, SeriesQueryHookReturn>({
             hook: useSeriesQuery,
             mocks: [seriesQuerySuccessMock],
         });
@@ -21,8 +21,8 @@ describe("useSeriesQuery()", () => {
         expect(result.current.series).toStrictEqual(seriesQueryReturnMock.series);
     });
 
-    it("should not return series and return a failure", async () => {
-        const { result, waitForNextUpdate } = renderQueryHook<SeriesQueryHookReturn>({
+    it("shouldn't return series and return a failure", async () => {
+        const { result, waitForNextUpdate } = renderQueryHook<void, SeriesQueryHookReturn>({
             hook: useSeriesQuery,
             mocks: [seriesQueryFailureMock],
         });
