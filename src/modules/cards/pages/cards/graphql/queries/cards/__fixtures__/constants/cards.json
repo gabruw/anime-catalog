@@ -1,0 +1,228 @@
+{
+    "cards": [
+        {
+            "id": "ecard3-1",
+            "dexId": [142],
+            "name": "Aerodactyl",
+            "image": "https://assets.tcgdex.net/en/ecard/ecard3/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex14-1",
+            "dexId": [354],
+            "name": "Banette",
+            "image": "https://assets.tcgdex.net/en/ex/ex14/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex11-1",
+            "dexId": [15],
+            "name": "Beedrill δ",
+            "image": "https://assets.tcgdex.net/en/ex/ex11/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex8-1",
+            "dexId": [334],
+            "name": "Altaria",
+            "image": "https://assets.tcgdex.net/en/ex/ex8/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex15-1",
+            "dexId": [181],
+            "name": "Ampharos δ",
+            "image": "https://assets.tcgdex.net/en/ex/ex15/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex3-1",
+            "dexId": [359],
+            "name": "Absol",
+            "image": "https://assets.tcgdex.net/en/ex/ex3/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex9-1",
+            "dexId": [257],
+            "name": "Blaziken",
+            "image": "https://assets.tcgdex.net/en/ex/ex9/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex6-1",
+            "dexId": [15],
+            "name": "Beedrill",
+            "image": "https://assets.tcgdex.net/en/ex/ex6/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex5-1",
+            "dexId": [354],
+            "name": "Banette",
+            "image": "https://assets.tcgdex.net/en/ex/ex5/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex13-1",
+            "dexId": [348],
+            "name": "Armaldo δ",
+            "image": "https://assets.tcgdex.net/en/ex/ex13/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex12-1",
+            "dexId": [142],
+            "name": "Aerodactyl",
+            "image": "https://assets.tcgdex.net/en/ex/ex12/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex5.5-1",
+            "dexId": [252],
+            "name": "Treecko",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex16-1",
+            "dexId": [306],
+            "name": "Aggron",
+            "image": "https://assets.tcgdex.net/en/ex/ex16/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex1-1",
+            "dexId": [306],
+            "name": "Aggron",
+            "image": "https://assets.tcgdex.net/en/ex/ex1/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex2-1",
+            "dexId": [348],
+            "name": "Armaldo",
+            "image": "https://assets.tcgdex.net/en/ex/ex2/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex4-1",
+            "dexId": [332],
+            "name": "Team Aqua's Cacturne",
+            "image": "https://assets.tcgdex.net/en/ex/ex4/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex7-1",
+            "dexId": [184],
+            "name": "Azumarill",
+            "image": "https://assets.tcgdex.net/en/ex/ex7/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "ex10-1",
+            "dexId": [181],
+            "name": "Ampharos",
+            "image": "https://assets.tcgdex.net/en/ex/ex10/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "gym2-1",
+            "dexId": [59],
+            "name": "Blaine's Arcanine",
+            "image": "https://assets.tcgdex.net/en/gym/gym2/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "gym1-1",
+            "dexId": [146],
+            "name": "Blaine's Moltres",
+            "image": "https://assets.tcgdex.net/en/gym/gym1/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "hgss1-1",
+            "dexId": [59],
+            "name": "Arcanine",
+            "image": "https://assets.tcgdex.net/en/hgss/hgss1/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "hgss4-1",
+            "dexId": [306],
+            "name": "Aggron",
+            "image": "https://assets.tcgdex.net/en/hgss/hgss4/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "hgss3-1",
+            "dexId": [182],
+            "name": "Bellossom",
+            "image": "https://assets.tcgdex.net/en/hgss/hgss3/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "hgss2-1",
+            "dexId": [385],
+            "name": "Jirachi",
+            "image": "https://assets.tcgdex.net/en/hgss/hgss2/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "lc-1",
+            "dexId": [65],
+            "name": "Alakazam",
+            "image": "https://assets.tcgdex.net/en/lc/lc/1",
+            "category": "Pokemon"
+        },
+        {
+            "id": "2011bw-1",
+            "dexId": null,
+            "name": "Snivy",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "2012bw-1",
+            "dexId": null,
+            "name": "Servine",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "2014xy-1",
+            "dexId": null,
+            "name": "Weedle",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "2015xy-1",
+            "dexId": null,
+            "name": "Treecko",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "2016xy-1",
+            "dexId": null,
+            "name": "Vulpix",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "2017sm-1",
+            "dexId": null,
+            "name": "Rowlet",
+            "image": null,
+            "category": "Pokemon"
+        },
+        {
+            "id": "2018sm-1",
+            "dexId": null,
+            "name": "Growlithe",
+            "image": null,
+            "category": "Pokemon"
+        }
+    ]
+}
