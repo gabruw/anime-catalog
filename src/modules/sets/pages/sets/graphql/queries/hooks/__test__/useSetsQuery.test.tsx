@@ -1,4 +1,4 @@
-import { renderQueryHook } from "@app/__fixtures__/functions/renderQueryHook";
+import { renderQueryHook } from "@app/__fixtures__/functions/renderHook/renderQueryHook";
 import { SetsQueryHookReturn, useSetsQuery } from "@app/modules/sets/pages/sets/graphql/queries/hooks/useSetsQuery";
 import { setsQueryReturnMock } from "@app/modules/sets/pages/sets/graphql/queries/sets/__fixtures__/constants";
 import {
@@ -8,7 +8,7 @@ import {
 
 describe("useSetsQuery()", () => {
     it("should return sets successfully", async () => {
-        const { result, waitForNextUpdate } = renderQueryHook<SetsQueryHookReturn>({
+        const { result, waitForNextUpdate } = renderQueryHook<void, SetsQueryHookReturn>({
             hook: useSetsQuery,
             mocks: [setsQuerySuccessMock],
         });
@@ -18,8 +18,8 @@ describe("useSetsQuery()", () => {
         expect(result.current.sets).toStrictEqual(setsQueryReturnMock.sets);
     });
 
-    it("should not return sets and return a failure", async () => {
-        const { result, waitForNextUpdate } = renderQueryHook<SetsQueryHookReturn>({
+    it("shouldn't return sets and return a failure", async () => {
+        const { result, waitForNextUpdate } = renderQueryHook<void, SetsQueryHookReturn>({
             hook: useSetsQuery,
             mocks: [setsQueryFailureMock],
         });
