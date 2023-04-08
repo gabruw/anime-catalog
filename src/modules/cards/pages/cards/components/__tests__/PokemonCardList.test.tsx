@@ -1,21 +1,19 @@
-import { screen } from "@testing-library/react";
-
 import { renderReduxApollo } from "@app/__fixtures__/functions/render/renderReduxApollo";
-import { Cards } from "@app/modules/cards/pages/cards";
+import { PokemonCardList } from "@app/modules/cards/pages/cards/components/PokemonCardList";
 import {
     cardsQuerySuccessLastPaginationMock,
     cardsQuerySuccessPaginationMock,
 } from "@app/modules/cards/pages/cards/graphql/queries/cards/__fixtures__/instances";
 
-const setup = (): void => {
+const setup = () => {
     renderReduxApollo({
-        component: <Cards />,
+        component: <PokemonCardList />,
         mocks: [cardsQuerySuccessPaginationMock, cardsQuerySuccessLastPaginationMock],
     });
 };
 
-describe("<Cards />", () => {
-    it("should render", () => {
+describe("<PokemonCardList />", () => {
+    it("should ", () => {
         setup();
     });
 });
