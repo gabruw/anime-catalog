@@ -1,24 +1,29 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { MockedProvider, MockedProviderProps } from "@apollo/client/testing";
 import { Renderer, renderHook, RenderHookResult } from "@testing-library/react-hooks";
+import { Provider as ReduxProvider } from "react-redux";
 
-type RenderQueryHook<TResult, TProps> = {
+import { store } from "@app/storages/system";
+
+type RenderReduxQueryHook<TResult, TProps> = {
     props?: TProps;
     hook: (props: TProps) => TResult;
     mocks: MockedProviderProps["mocks"];
 };
 
-export const renderQueryHook = <TResult, TProps = void>({
+const renderReduxQueryHook = <TProps, TResult>({
     hook,
     mocks,
     props,
-}: RenderQueryHook<TResult, TProps>): RenderHookResult<TProps, TResult, Renderer<TProps>> => {
+}: RenderReduxQueryHook<TResult, TProps>): RenderHookResult<TProps, TResult, Renderer<TProps>> => {
     return renderHook<TProps, TResult>(hook, {
         initialProps: props,
         wrapper: ({ children }: any) => (
             <MockedProvider addTypename={false} mocks={mocks}>
-                {children}
+                <ReduxProvider store={store}>{children}</ReduxProvider>
             </MockedProvider>
         ),
     });
 };
+
+export { renderReduxQueryHook };
