@@ -12,6 +12,6 @@ export const serieQueryReturnMock: SerieQueryReturn = {
     serie: {
         id: "base",
         name: "Base",
-        logo: "https://assets.tcgdex.net/en/base/base1/logo/high.png",
+        logo: "https://assets.tcgdex.net/en/base/base1/logo",
     },
 };

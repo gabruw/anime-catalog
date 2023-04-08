@@ -1,7 +1,7 @@
 import { Serie } from "@app/modules/series/types/Serie";
 
 export type SerieQueryVariables = {
-    id: string;
+    id: Serie["id"];
 };
 
 export type SerieQueryReturn = {
