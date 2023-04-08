@@ -1,6 +1,6 @@
-import { renderQueryHook } from "@app/__fixtures__/functions/renderQueryHook";
+import { renderQueryHook } from "@app/__fixtures__/functions/renderHook/renderQueryHook";
 import {
-    SetQueryHookParams,
+    SetQueryHookProps,
     SetQueryHookReturn,
     useSetQuery,
 } from "@app/modules/sets/pages/set/graphql/queries/hooks/useSetQuery";
@@ -13,13 +13,13 @@ import {
     setQuerySuccessMock,
 } from "@app/modules/sets/pages/set/graphql/queries/set/__fixtures__/instances";
 
-const props: SetQueryHookParams = {
+const props: SetQueryHookProps = {
     setId: setQueryVariablesMock.id,
 };
 
 describe("useSetQuery()", () => {
     it("should return set successfully", async () => {
-        const { result, waitForNextUpdate } = renderQueryHook<SetQueryHookReturn, SetQueryHookParams>({
+        const { result, waitForNextUpdate } = renderQueryHook<SetQueryHookProps, SetQueryHookReturn>({
             props,
             hook: useSetQuery,
             mocks: [setQuerySuccessMock],
@@ -30,8 +30,8 @@ describe("useSetQuery()", () => {
         expect(result.current.set).toStrictEqual(setQueryReturnMock.set);
     });
 
-    it("should not return set and return a failure", async () => {
-        const { result, waitForNextUpdate } = renderQueryHook<SetQueryHookReturn, SetQueryHookParams>({
+    it("shouldn't return set and return a failure", async () => {
+        const { result, waitForNextUpdate } = renderQueryHook<SetQueryHookProps, SetQueryHookReturn>({
             props,
             hook: useSetQuery,
             mocks: [setQueryFailureMock],

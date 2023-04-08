@@ -4,7 +4,7 @@ import { SET } from "@app/modules/sets/pages/set/graphql/queries/set";
 import { SetQueryReturn, SetQueryVariables } from "@app/modules/sets/pages/set/graphql/queries/set/types";
 import { Set } from "@app/modules/sets/types/Set";
 
-export type SetQueryHookParams = {
+export type SetQueryHookProps = {
     setId: Set["id"];
 };
 
@@ -13,7 +13,7 @@ export type SetQueryHookReturn = {
     isLoading: QueryResult["loading"];
 };
 
-const useSetQuery = ({ setId }: SetQueryHookParams): SetQueryHookReturn => {
+const useSetQuery = ({ setId }: SetQueryHookProps): SetQueryHookReturn => {
     const { data, loading } = useQuery<SetQueryReturn, SetQueryVariables>(SET, {
         fetchPolicy: "network-only",
         variables: {

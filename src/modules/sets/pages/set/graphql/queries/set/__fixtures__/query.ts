@@ -2,7 +2,7 @@ import { MockedResponse } from "@apollo/client/testing";
 
 import { SET } from "@app/modules/sets/pages/set/graphql/queries/set";
 import { SetQueryReturn, SetQueryVariables } from "@app/modules/sets/pages/set/graphql/queries/set/types";
-import { QueryMock } from "@app/types/query-mock";
+import { QueryMock } from "@app/types/QueryMock";
 
 type SetQueryMock = QueryMock<SetQueryReturn, SetQueryVariables>;
 

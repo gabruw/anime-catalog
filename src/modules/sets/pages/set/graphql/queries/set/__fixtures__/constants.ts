@@ -13,6 +13,6 @@ export const setQueryReturnMock: SetQueryReturn = {
         id: "base1",
         name: "Base Set",
         releaseDate: "1999-01-09",
-        logo: "https://assets.tcgdex.net/en/base/base1/logo/high.png",
+        logo: "https://assets.tcgdex.net/en/base/base1/logo",
     },
 };

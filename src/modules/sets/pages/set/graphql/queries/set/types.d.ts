@@ -1,7 +1,7 @@
 import { Set } from "@app/modules/sets/types/Set";
 
 export type SetQueryVariables = {
-    id: string;
+    id: Set["id"];
 };
 
 export type SetQueryReturn = {
