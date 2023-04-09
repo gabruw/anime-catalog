@@ -4,11 +4,12 @@ import {
     cardsQuerySuccessLastPaginationMock,
     cardsQuerySuccessPaginationMock,
 } from "@app/modules/cards/pages/cards/graphql/queries/cards/__fixtures__/instances";
+import { cardsQuantityQuerySuccessMock } from "@app/modules/cards/pages/cards/graphql/queries/cards-quantity/__fixtures__/instances";
 
 const setup = () => {
     renderReduxApollo({
         component: <PokemonCardList />,
-        mocks: [cardsQuerySuccessPaginationMock, cardsQuerySuccessLastPaginationMock],
+        mocks: [cardsQuantityQuerySuccessMock, cardsQuerySuccessPaginationMock, cardsQuerySuccessLastPaginationMock],
     });
 };
 

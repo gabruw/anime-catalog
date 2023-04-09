@@ -4,8 +4,8 @@ import { PokemonListCardLoader } from "@app/modules/cards/pages/cards/components
 
 const PokemonCardListLoader = (): ReactElement => (
     <>
-        {Array.from({ length: 4 }).map(() => (
-            <PokemonListCardLoader key={`pokemon-card-list-loader-${new Date().getTime()}`} />
+        {Array.from({ length: 4 }).map((_, index) => (
+            <PokemonListCardLoader key={`pokemon-card-list-loader-${new Date().getTime() + index}`} />
         ))}
     </>
 );
