@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Renderer, renderHook, RenderHookResult } from "@testing-library/react-hooks";
 import { Provider as ReduxProvider } from "react-redux";
 
+import { RenderHookWrapper } from "@app/__fixtures__/types/RenderHookWrapper";
 import { store } from "@app/storages/system";
 
-type RenderReduxHook<TResult, TProps> = {
+type RenderReduxHook<TProps, TResult> = {
     props?: TProps;
     hook: (props: TProps) => TResult;
 };
@@ -12,10 +12,10 @@ type RenderReduxHook<TResult, TProps> = {
 const renderReduxHook = <TProps, TResult>({
     hook,
     props,
-}: RenderReduxHook<TResult, TProps>): RenderHookResult<TProps, TResult, Renderer<TProps>> => {
+}: RenderReduxHook<TProps, TResult>): RenderHookResult<TProps, TResult, Renderer<TProps>> => {
     return renderHook<TProps, TResult>(hook, {
         initialProps: props,
-        wrapper: ({ children }: any) => <ReduxProvider store={store}>{children}</ReduxProvider>,
+        wrapper: ({ children }: RenderHookWrapper) => <ReduxProvider store={store}>{children}</ReduxProvider>,
     });
 };
 
