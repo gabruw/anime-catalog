@@ -1,27 +1,49 @@
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { Button, NumberInput, NumberInputField, Stack } from "@chakra-ui/react";
+import { t } from "i18next";
 import { ReactElement } from "react";
 
+import { PaginationFooterLoader } from "@app/components/PaginationFooter/components/PaginationFooterLoader";
+import { usePaginationContext } from "@app/storages/pagination";
+
 export type PaginationFooterProps = {
-    page: number;
-    handleNextPage: () => void;
-    handlePreviousPage: () => void;
+    quantity?: number;
+    isLoading: boolean;
 };
 
-const PaginationFooter = ({ page, handleNextPage, handlePreviousPage }: PaginationFooterProps): ReactElement => (
-    <Stack spacing={4} direction="row" align="center" w="100%">
-        <Button leftIcon={<ArrowBackIcon />} onClick={handlePreviousPage} isDisabled={page === 1}>
-            Previous
-        </Button>
+const PaginationFooter = ({ isLoading, quantity = 1 }: PaginationFooterProps): ReactElement => {
+    const { page, count, setPage, handleNextPage, handlePreviousPage } = usePaginationContext();
 
-        <NumberInput maxW={20} defaultValue={1} min={1} max={999} value={page}>
-            <NumberInputField />
-        </NumberInput>
+    const maxPages = quantity / count;
 
-        <Button rightIcon={<ArrowForwardIcon />} onClick={handleNextPage} isDisabled={page === 999}>
-            Next
-        </Button>
-    </Stack>
-);
+    return (
+        <Stack spacing={4} direction="row" align="center" w="100%">
+            {isLoading ? (
+                <PaginationFooterLoader />
+            ) : (
+                <>
+                    <Button leftIcon={<ArrowBackIcon />} onClick={handlePreviousPage} isDisabled={page === 1}>
+                        {t("pagination.previous")}
+                    </Button>
+
+                    <NumberInput
+                        min={1}
+                        maxW={20}
+                        value={page}
+                        max={maxPages}
+                        defaultValue={1}
+                        onChange={(_, value) => setPage(value)}
+                    >
+                        <NumberInputField />
+                    </NumberInput>
+
+                    <Button rightIcon={<ArrowForwardIcon />} onClick={handleNextPage} isDisabled={page === maxPages}>
+                        {t("pagination.next")}
+                    </Button>
+                </>
+            )}
+        </Stack>
+    );
+};
 
 export { PaginationFooter };
