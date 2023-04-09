@@ -1,5 +1,3 @@
-import { screen } from "@testing-library/react";
-
 import { renderReduxApollo } from "@app/__fixtures__/functions/render/renderReduxApollo";
 import { Cards } from "@app/modules/cards/pages/cards";
 import {

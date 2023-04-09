@@ -13,6 +13,8 @@ const PokemonListCard = ({ name, image }: PokemonListCardProps): ReactElement =>
     const { getImageLink } = useImageLink();
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
+    const imageSource = getImageLink(image, FALLBACK_IMAGE);
+
     return (
         <>
             {isLoading && <PokemonListCardLoader />}
@@ -24,9 +26,9 @@ const PokemonListCard = ({ name, image }: PokemonListCardProps): ReactElement =>
                 maxW={220}
                 alt={name}
                 title={name}
+                src={imageSource}
                 hidden={isLoading}
                 onLoad={() => setIsLoading(false)}
-                src={getImageLink(image, FALLBACK_IMAGE)}
             />
         </>
     );
